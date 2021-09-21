@@ -1,0 +1,580 @@
+html, body {
+  margin: 0 auto; /* create space around elements */
+  padding: 0;  /*generate space around an element's content*/
+  width: 100%; /* sets the width of an element.*/
+  overflow-x: hidden; /*specifies what should happen if content overflows an element's box. in this case the  is clipped, and the rest of the content will be invisible */
+}
+body {
+font-family: 'Poppins', sans-serif; /*fonts names*/
+background-color : rgb(0, 0, 0); /* background color*/
+background-size : cover; /*Resize the background image to cover the entire page*/
+-webkit-font-smoothing: antialiased; /*It only works on Mac OS X/macOS. antialiased:Switching from subpixel rendering to antialiasing for light text on dark backgrounds makes it look lighter.*/
+-moz-osx-font-smoothing: grayscale; /* make text more visually pleasing in some browsers.*/
+height: 100%;
+overflow: auto; /*if the content proceeds outside its box then that content will be hidden whilst a scroll bar should be visible for users to read the rest of the content.*/
+-webkit-overflow-scrolling: touch; /*enables momentum scrolling*/
+position: relative; /*positioned to  normal position*/
+}
+.fill {
+min-height: 100vh; /*minimum viewport height.*/
+height: 100vh; /* current viewport height.*/
+}
+.hidden{
+ opacity:0;
+}
+.visible{
+ opacity:1;
+}
+.hidescroll {
+overflow-y: hidden; /*Hide scroll bar*/
+}
+
+.padbottom {
+padding-bottom: 40px; /*bottom space of an element.*/
+}
+.animated,
+.slideOutRight {
+overflow-x: hidden;
+}
+.left {
+text-align:left;
+padding-top: 40%;
+}
+.sticky { /*make elements stick*/
+position : fixed!important; /*this is important,apply this rule!, fixed: relative to the browser window*/
+top : 0;
+}
+.mob-nav { /*Mobile Navigation Menu*/
+padding: 0.5rem 1rem !important; /*this is important,apply this rule!*/
+position: absolute; /*relative to the first positioned element*/
+top: 0;
+z-index: 1;
+display: flex;
+background-color: #000;
+width: 100%;
+display: -webkit-box; /*Browser vendors*/
+display: -moz-box; 
+display: -ms-flexbox; 
+display: -webkit-flex;
+display: flex;
+align-items: center; /*default alignment for items*/
+justify-content: center; /* Pack items around the center */
+}
+.navbar, .social-bar {
+display : none;
+}
+.about {
+margin-bottom : 60px; 
+}
+.about h4 {
+color : #fff;
+font-size : 16px;
+margin-bottom : 0;
+}
+.about h2 {
+color : #fff;
+font-size : 44px;
+font-weight : 600;
+}
+.about p {
+font-size : 14px;
+color : #dddddd;
+line-height : 2;
+margin : 24px 0;
+}
+.abouthighlight {
+font-weight : 600;
+color : #fff;
+}
+.about a {
+color : #7FDBFF
+;
+}
+.list h5 {
+font-size : 16px;
+font-weight : 600;
+color : #fff;
+margin-top : 20px;
+}
+.list ul {
+padding : 0;
+}
+.list ul li {
+font-weight : 400;
+color : #dddddd;
+font-size : 14px;
+list-style : none;
+padding : 6px 0;
+}
+.top-buffer {
+padding-top : 80px;
+}
+.offset-1 {
+margin-left : 0;
+}
+h1 {
+color : #fff;
+font-weight : 600;
+font-size : 36px;
+text-align: center;
+}
+h3 {
+color : #c1c1c1;
+font-size : 13px;
+padding-top : 20px;
+font-style : italic;
+max-width : 80%;
+line-height : 1.5em;
+}
+.highlight {
+color : #7FDBFF
+;
+}
+.emoji {
+font-size : 22px;
+line-height: 0;
+}
+.CSfooter {
+background : #191919; /*bottom of the page background*/
+}
+.CSfooter h5 {
+color : #fff;
+font-weight : 600;
+font-size : 36px;
+}
+.CSfooter h5 a {
+color : #7FDBFF;
+text-decoration : underline;
+transition : all 0.5s;
+}
+.CSfooter h5 a:hover {
+color : #7FDBFF;
+text-decoration : underline;
+transition : all 0.5s;
+}
+.nextproject .heading {
+color :#7FDBFF;
+font-weight : 600;
+font-size : 36px;
+margin-bottom : 4px;
+transition : all 0.5s;
+line-height : 1.2em;
+}
+.nextproject .support {
+font-weight : 600;
+color : #787878;
+text-transform : uppercase;
+font-size : 14px;
+letter-spacing : 5px;
+display : block; /*It starts on a new line, and takes up the whole width*/
+transition : all 0.5s;
+}
+.nextproject a:hover p, .nextproject a:hover p span {
+color : #fff;
+transition : all 0.5s;
+}
+.nextproject {
+margin-bottom : 30px;
+}
+.fotpad {   /*bottom of projects html pages*/
+padding : 50px 0 100px;
+}
+.navbar-brand {
+margin-right: 0;
+}
+.navbar-dark .navbar-brand:hover {
+color: #7FDBFF;
+transition: all 0.5s;
+}
+.navbar-dark .navbar-brand {
+transition: all 0.5s;
+}
+a.navbar-brand:hover {
+color: #7FDBFF;
+transition: all 0.5s;
+}
+.wholeBG .navbar-dark .navbar-nav .nav-link, .wholeBG .navbar-dark .navbar-brand {
+color : #393939;
+}
+.img-break {
+margin : 40px 0;
+}
+.img-break:last-child {
+margin-bottom : 0;
+}
+.social li {
+width: 32%;
+display: inline-block;
+text-align: center;
+}
+.social ul {
+list-style : none;
+padding : 0;
+}
+.menu-bar {
+background-color: #232323;
+}
+.social-bar, .menu-bar {
+padding : 0.5rem 1rem !important ; /*this is important,apply this rule!*/
+position : fixed;  /*fixed: relative to the browser window*/
+bottom : 0;
+}
+.menu-bar-project {
+background : #191919;
+}
+.menu-bar-project a {
+color : #fff !important ; /*this is important,apply this rule!*/
+}
+ul.ml-auto {
+margin : 8px;
+}
+.navbar-dark .navbar-nav .nav-link {
+color : #fff;
+}
+.navbar-dark .navbar-toggler {
+border : 0;
+}
+.navbar-default .navbar-toggle .icon-bar {
+background-color : #fff;
+}
+.navbar-default .navbar-toggle .icon-bar:hover {
+background-color : #fff;
+}
+.wisoBG {
+background-image : url(../images_new/elder-hands.jpg);
+background-size : cover;
+background-repeat : no-repeat;
+position: static;
+height: 500px;
+}
+.flaskBG {
+background-image : url(../images_new/snbg.jpg);
+background-size : cover;
+background-repeat : no-repeat;
+position: static;
+height: 500px;
+}
+.uiBG {
+background-image : url(../images_new/anaz3_.jpg);
+background-size : cover;
+background-repeat : no-repeat;
+position: static;
+height: 500px;
+}
+.verginaBG {
+background-image :  url(../images_new/verginabg.jpg);
+background-size : cover;
+background-repeat : no-repeat;
+position: static;
+height: 500px;
+}
+.wholeBG {
+background-color : #fff;
+background : none;
+}
+.para h4 {
+font-size : 14px;
+color :#7FDBFF;
+text-transform : uppercase;
+letter-spacing : 4px;
+font-weight : 600;
+}
+.para p {
+font-size : 14px;
+color : #393939;
+line-height : 2em;
+margin-top : 24px;
+}
+.para {
+margin : 50px 20px;
+}
+.whole h3 {
+font-size : 12px;
+color: #fff;
+text-transform: uppercase;
+font-style: normal;
+letter-spacing: 6px;
+font-weight: 600;
+text-align: center;
+margin: 0 auto;
+}
+.downarrow {
+position : fixed; /*fixed: relative to the browser window*/
+bottom : 6%;
+}
+.whole .downarrow img {
+height : 20px;
+}
+.homepage .btn {
+margin-top : 30px;
+}
+.btn-primary {
+  background-color: #000;
+  padding: 16px 30px;
+  border-radius: 0;
+  border: 1px;
+  border-color: #7FDBFF;
+  border-style: solid;
+  transition: all 0.5s;
+  font-size: 14px;
+}
+.btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+background-color : #7FDBFF;
+transition : all 0.5s;
+border-color :#7FDBFF;
+}
+.btn-secondary {
+  background-color: #000;
+  padding: 16px 30px;
+  border-radius: 0;
+  border: 1px;
+  border-color: #7FDBFF;
+  border-style: solid;
+  transition: all 0.5s;
+  font-size: 14px;
+}
+.btn-secondary:hover {
+color : #fff;
+background-color : #7FDBFF;
+border-color : #7FDBFF;
+}
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+color : #fff;
+background-color : #7FDBFF;
+border : 0;
+}
+.link-animation {
+display : inline-block;
+color : #000;
+text-decoration : none;
+}
+.delay-1 {
+animation-delay : 0.25s;
+}
+.delay-2 {
+animation-delay : 0.5s;
+}
+.delay-3 {
+animation-delay : 0.75s;
+}
+.delay-4 {
+animation-delay : 1s;
+}
+.navbar-brand {
+font-size : 12px;
+letter-spacing : 2px;
+font-weight : 600;
+color : #fff;
+}
+.navbar a, .social-link a {
+color : #fff;
+font-size : 18px;
+}
+.social-link a:hover {
+color : rgba(255, 255, 255, 0.75);
+}
+a.nav-link {
+margin : 0 10px;
+}
+.loader {
+background-color : #404040
+;
+width : 100%;
+height : 100%;
+position : absolute; /*relative to the first positioned element*/
+z-index : 1;
+}
+#projects {
+text-align : center;
+}
+.title {
+font-size : 30px;
+font-weight : 600;
+letter-spacing: 1px;
+}
+.supporttext {
+text-transform : uppercase;
+font-size : 12px;
+letter-spacing : 3px;
+color : #dcdcdc;
+}
+.project {
+height : 500px;
+}
+.project a {
+top : 50%;
+color : #fff;
+transition : all 0.5s;
+position : absolute; /*relative to the first positioned element*/
+left : 0;
+right : 0;
+animation-delay : 20s;
+}
+.project a:hover {
+color : #fff;
+animation-delay : 20s;
+cursor : pointer;
+}
+.container-fluid {
+padding : 0;
+}
+a:hover {
+text-decoration : none;
+}
+.project-1 {
+background-image : url('..//images_new/elder-hands.jpg');
+background-repeat : no-repeat;
+background-size : cover;
+}
+.project-2 {
+background-image : url('../images_new/snorkeling.jpg');
+background-repeat : no-repeat;
+background-size : cover;
+}
+.project-3 {
+  background-image : url('../images_new/ui_bg.jpg');
+  background-repeat : no-repeat;
+  background-size : cover;
+  }
+
+
+.project-4 {
+background-image : url('../images_new/verginabg2.jpg');
+background-repeat : no-repeat;
+background-size : cover;
+}
+@keyframes fadein { /* fadein keyframes*/
+
+from {
+opacity : 0;
+}
+to {
+opacity : 1;
+}
+}
+@media screen and (min-width:768px) { /* adjust   for Desktop, Tablet, Mobile screen.*/
+.wrapper {
+width: 100%;
+margin:0 auto;
+position: relative;
+min-height: 100vh;
+overflow: hidden;
+}
+.left {
+padding-top: 0;
+}
+.vertical-center {
+position: absolute; /*relative to the first positioned element*/
+top: 50%;
+transform: translateY(-50%);
+left: 10%;
+}
+.social li {
+display : inline;
+padding-right : 30px;
+}
+.wisoBG,
+.flaskBG,
+.uiBG,
+.verginaBG {
+height: 100vh
+}
+.whole h3 {
+font-size: 16px;
+}
+.top-buffer {
+padding-top : 120px;
+}
+.offset-1 {
+margin-left : 8.333333%;
+}
+.fotpad {
+padding : 180px 0;
+}
+.nextproject {
+margin-bottom : 0;
+}
+.nextproject {
+padding-left : 40px;
+}
+.para {
+margin : 80px 0;
+}
+.btn-secondary {
+margin-left : 20px;
+}
+.social-bar, .mob-nav, .menu-bar {
+padding : 0.5rem 4rem !important ; /*this is important,apply this rule!*/
+}
+h1 {
+font-size : 46px;
+}
+h3 {
+font-size : 16px;
+}
+.navbar {
+padding : 0.5rem 4rem;
+}
+.project-1, .project-2, .project-3, .project-4 {
+background-image : none; /*when the project.html load*/
+}
+.project {
+height : 100vh;
+}
+.project-1:hover {
+background-image : url('../images_new/elder-hands.jpg'); /* hover image of proj1*/
+animation : fadein 1.5s;
+}
+.project-2:hover {
+background-image : url('../images_new/snbg.jpg'); /* hover image of proj2*/
+animation : fadein 1.5s;
+}
+.project-3:hover {
+  background-image : url('../images_new/anaz3_.jpg'); /* hover image of proj3*/
+  animation : fadein 1.5s;
+  }
+.project-4:hover {
+background-image : url('../images_new/verginabg.jpg'); /* hover image of proj4*/
+animation : fadein 1.5s;
+}
+}
+@media screen and (min-width:992px) { /* adjust   for Desktop, Tablet, Mobile screen.*/
+.wrapper {
+min-height: 100vh;
+}
+h1 {
+letter-spacing: 1px;
+}
+.navbar, .social-bar {
+display : flex;
+}
+.solid-nav {
+background-color: #232323;
+}
+.about {
+margin-bottom : 0;
+}
+.link-animation::after {
+content : '';
+display : block;
+width : 0;
+height : 2px;
+background : #7FDBFF;
+transition : width 0.3s;
+}
+.link-animation:hover::after {
+width : 100%;
+}
+.project-1:hover {
+background-image : url(../images_new/wiso_new.jpg); /* background-image of proj1*/
+}
+.project-2:hover {
+background-image : url(../images_new/snorkeling.jpg); /* background-image of proj2*/
+}
+.project-3:hover {
+  background-image : url(../images_new/ui_bg.jpg); /* background-image of proj3*/
+}
+.project-4:hover {
+background-image : url(../images_new/verginabg2.jpg);  /* background-image of proj4*/
+}
+}

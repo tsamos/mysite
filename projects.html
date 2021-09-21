@@ -1,0 +1,162 @@
+﻿<!doctype html>
+<!--HTML document-->
+
+<html lang="en">
+<!--HTML language-->
+
+<head>
+
+  <!--  cached version of Bootstrap’s compiled CSS for my project. -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="Custom stylesheet" href="css\customstyle.css">
+  <!-- rel:Specifies the relationship between this html page and the linked css  href: css URL	-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600" rel="stylesheet">
+  <!-- rel:Specifies the relationship between this html page and the linked document  href:font URL	-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <!--rel:Specifies the relationship between this html page and the linked document. href:load this animated css via CDN ( Content Delivery Network.)-->
+  <link rel='shortcut icon' type='image/x-icon' href='images_new\favicon.ico'>
+  <!--desktop browsers only (icon)-->
+
+  <title>Emmanouil Tsamoudalis | Projects</title>
+  <!--title for  this HTML -->
+
+</head>
+<!--container for all the head elements like title , scripts, styles, meta information-->
+
+<body>
+  <!--text, hyperlinks, images, tables, lists-->
+  <div class="wrapper">
+    <!--A wrapper is an element, commonly a div, that encloses one or more other
+elements in the HTML markup -->
+
+    <div class="animated slideOutRight loader d-none d-sm-none d-md-block"></div>
+    <!--div: element is often used as a container for other HTML elements to style them with CSS or to perform certain tasks with JavaScript.
+    -->
+
+    <nav class="navbar fixed-top navbar-expand-lg animated fadeInDown delay-1s navbar-dark bar-padding">
+      <!-- Bootstrap Animations-->
+      <a class="navbar-brand" href="index.html">EMMANOUIL TSAMOUDALIS</a> <!-- my name-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        <!--Bootstrap- navbar color via css -->
+      </button>
+      <!--add button to html-->
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <!--.collapse.navbar-collapse: grouping and hiding navbar contents-->
+        <ul class="navbar-nav ml-auto">
+          <!--align my name left and all the navbar-items to right-->
+          <li class="nav-item">
+            <!--navigation items-->
+            <a class="nav-link link-animation" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-animation" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link-animation" href="mailto:etsamoudalis@gmail.com">Contact</a> 
+            
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="mob-nav d-lg-none animated fadeInDown">
+      <!--Bootstrap Animations-->
+      <a class="navbar-brand" href="index.html">EMMANOUIL TSAMOUDALIS</a>
+      <!-- my name, href:open the index.html page-->
+    </div>
+
+
+
+    <div class="container-fluid" id="projects">  <!--width changes every time the viewport width changes-->
+      <!-- Bootstrap css-->
+      <div class="row no-gutters">
+        <!--Bootstrap’s grid system-->
+
+        <div class="col-md project project-1" onclick="location.href='wiso.html';">
+          <!--1st project wiso, href:open the wiso.html page-->
+          <a href="wiso.html">
+            <div class="animated fadeIn delay-1 hidescroll">
+              <!--CSS animation with delay and opacity-->
+              <span class="title">WISO</span><br><span class="supporttext">Service Design</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md project project-2" onclick="location.href='flask.html';">
+          <!--2nd project flask, href:open the flask.html page-->
+          <a href="flask.html">
+            <div class="animated fadeIn delay-2 hidescroll">
+              <!--CSS animation with delay and opacity-->
+              <span class="title">Water Flask For Snorkeling</span><br><span class="supporttext">Product Design</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md project project-3" onclick="location.href='ui.html';">
+          <!--3rd project ui, href:open the ui.html page-->
+          <a href="ui.html">
+            <div class="animated fadeIn delay-3 hidescroll">
+              <!--CSS animation with delay and opacity-->
+              <span class="title">internet Radio-UI</span><br><span class="supporttext">User interfaces</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="col-md project project-4" onclick="location.href='vergina.html';">
+          <!--4rd project ui, href:open the vergina.html page-->
+          <a href="vergina.html">
+            <div class="animated fadeIn delay-4 hidescroll">
+              <!--CSS animation with delay and opacity-->
+              <span class="title">Rebranding for Vergina Beer</span><br><span class="supporttext">Branding </span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid social-bar animated fadeInUp d-none d-sm-none d-md-block">
+      <!--Bootstrap Animations-->
+
+       <div class="social">
+        <ul class="ml-auto">
+          <li class="social-link">
+            <a class="link-animation" href="https://www.linkedin.com/in/emmanouil-tsamoudalis/"
+              target="blank">LinkedIn</a>
+          </li>
+          <li class="social-link">
+            <a class="link-animation" href="https://www.instagram.com/tsamos_/" target="blank">Instagram</a>
+          </li>
+          <li class="social-link">
+            <a class="link-animation" href="https://www.facebook.com/tsamos97" target="blank">Facebook</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container-fluid menu-bar menu-bar-project animated fadeInUp d-lg-none">
+      <!--Bootstrap Animations-->
+  
+      <div class="social">
+        <ul class="ml-auto">
+          <li class="social-link">
+            <a class="link-animation" href="projects.html">Projects</a>
+          </li>
+          <li class="social-link">
+            <a class="link-animation" href="about.html">About</a>
+          </li>
+          <li class="social-link">
+            <a class="link-animation" href="mailto:etsamoudalis@gmail.com"></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    
+
+
+</html>
